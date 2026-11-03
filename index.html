@@ -15,6 +15,27 @@ header .brand img{width:64px;height:64px;object-fit:contain;flex-shrink:0}
 table{width:max-content;min-width:100%;table-layout:auto;font-size:13px}
 th,td{white-space:nowrap;overflow-wrap:normal;padding:9px 10px}
 @media(max-width:600px){header{padding:13px 12px}header .brand img{width:48px;height:48px}header h1{font-size:21px}header p{font-size:12px}.controls{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:4px}.controls input{grid-column:1/-1;min-width:0;width:100%}.controls button,.controls .stock-link{width:100%;padding:10px 5px;font-size:12px}.panel{padding:6px}.table-wrap{border-width:1px}table{font-size:12px}th,td{font-size:12px;padding:8px 9px}.pagination button{min-height:40px}.meta{font-size:12px}}
+
+/* Tema Cream Gold seragam dengan Stock WIKI */
+:root { color:#333333; background:#F5F3EC; }
+header { background:#B49A58; color:#FFFFFF; }
+.panel { border-color:#D8CFB4; box-shadow:0 3px 14px rgba(80,70,40,.07); }
+input { border-color:#B49A58; color:#333333; }
+input:focus { outline:2px solid #D8CFB4; outline-offset:1px; }
+button { border-color:#B49A58; color:#66552F; }
+button:hover:not(:disabled) { background:#F0EBDD; }
+.primary, .pagination .active, .stock-link { background:#B49A58; color:#FFFFFF; border-color:#B49A58; }
+.primary:hover:not(:disabled), .stock-link:hover { background:#978049; }
+.meta { color:#625C4E; }
+.table-wrap { border-color:#9B927D; }
+th,td { border-right-color:#B8B1A2; border-bottom-color:#C9C3B6; color:#333333; }
+thead th { background:#E8DFC5; color:#333333; border-bottom-color:#A99A74; }
+tbody tr:nth-child(odd) { background:#FFFFFF; }
+tbody tr:nth-child(even) { background:#F5F3EC; }
+tbody tr:hover { background:#ECE5D4; }
+td:first-child { background:#E8DFC5; }
+tbody tr:nth-child(even) td:first-child { background:#DDD4BD; }
+#loading { color:#806A3C; }
 </style>
 </head>
 <body>
@@ -27,7 +48,7 @@ th,td{white-space:nowrap;overflow-wrap:normal;padding:9px 10px}
 </section></main>
 <script>
 'use strict';
-const CSV_URL='https://raw.githubusercontent.com/duniandis/data_apk/refs/heads/main/loglist2.csv';
+const CSV_URL='https://raw.githubusercontent.com/duniandis/data_apk/refs/heads/main/loglist1.csv';
 const PAGE_SIZE=50;
 const $=id=>document.getElementById(id);
 let headers=[],rows=[],filtered=[],page=1,controller=null;
